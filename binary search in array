@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int n, find, found = 0;
+    printf("This code is written to first take a 1-D array from the user and then check a given number is available in this array or not..\n");
+    printf("Enter the size of the array:");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Now enter the elements of your array .\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("The array you entered is as follows :\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+
+    printf("Now enter the number that you want to find in this array.\n");
+
+    scanf("%d", &find);
+    for (int a = 0; a < n; a++)
+    {
+        if (arr[a] == find)
+        {
+            found = 1;
+        }
+    }
+    if (found == 1)
+        printf("%d is found in this array.\n", find);
+    else
+        printf("%d is not found in this array.\n", find);
+
+    return 0;
+}
