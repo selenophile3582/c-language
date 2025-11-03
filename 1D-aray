@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int n;
+    printf("This code is written to take a 1-D array from the user.\n");
+    printf("Enter the size of the array:");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Now enter the elements of your array .\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("The array you entered is as follows :\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+
+    return 0;
+}
