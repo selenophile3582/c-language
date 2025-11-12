@@ -11,6 +11,11 @@ int main()
     int count = (sizeof(arr) / sizeof(arr[0]));
     int *mid = findMid(arr, count);
     printf("%u\n", mid);
+    printf("The value at mid is %d \n", *mid);
+    mid++;
+    printf("The value at mid is %d \n", *mid);
+    mid++;
+    printf("The value at mid is %d \n", *mid);
 
     return 0;
 }
